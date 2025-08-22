@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Monaco', Monospace;
     background-color: white;
     color: #333;
   }
@@ -43,12 +43,13 @@
   }
   
   .enter {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start; 
+    text-align: left;        
+    padding-left: 50px;    
   }
   
   .enter h1 {
@@ -96,6 +97,7 @@
   }
   
   .content {
+    
     opacity: 0;              
     animation: fadeInPage 1.5s forwards; 
     animation-delay: 0.2s; 
