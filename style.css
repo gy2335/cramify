@@ -50,7 +50,6 @@ nav ul li a:hover {
 }
 
 .enter {
-  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
