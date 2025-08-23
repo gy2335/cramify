@@ -51,7 +51,7 @@ nav ul li a:hover {
   padding-top: 550px;
   padding-left: 50px;
   padding-right: 50px;
-  width: 50%; /* for width */
+  width: 60%; /* for width */
   min-height: calc(100vh - 180px);
   opacity: 0;
   animation: fadeInPage 1.5s forwards;
