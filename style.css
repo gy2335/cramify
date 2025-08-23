@@ -8,6 +8,7 @@ body {
   font-family: 'Helvetica', sans-serif;
   background-color: white;
   color: #333;
+  align-items: center; 
 }
 
 nav {
