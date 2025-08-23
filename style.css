@@ -48,11 +48,9 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 60%; /* for width */
-  min-height: calc(100vh - 180px);
+  padding: 0 50px; 
+  width: 60%;
+  min-height: auto; 
   opacity: 0;
   animation: fadeInPage 1.5s forwards;
   animation-delay: 0.2s;
