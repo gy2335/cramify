@@ -9,6 +9,7 @@ body {
   background-color: white;
   color: #333;
   align-items: center; 
+  min-height: 100vh;    
 }
 
 nav {
