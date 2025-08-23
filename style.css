@@ -48,7 +48,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 300px;
+  padding-top: 100px;
   padding-left: 50px;
   padding-right: 50px;
   width: 60%; /* for width */
