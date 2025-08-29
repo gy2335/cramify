@@ -49,6 +49,7 @@ nav ul li a:hover {
   max-width: var(--page-max-width);
   margin: 190px auto 0; 
   padding: 0 var(--content-side-gap);
+  padding-left: var(--content-left-padding);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -124,5 +125,5 @@ nav ul li a:hover {
 .features {
   width: 100%;
   box-sizing: border-box;
-  padding-left: var(--content-inner-offset); 
+  padding-left: 60px;
 }
