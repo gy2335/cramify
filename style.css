@@ -46,10 +46,9 @@ nav ul li a:hover {
 
 .content {
   width: 100%;
-  max-width: var(--page-max-width);
+  max-width: 1200px;      
   margin: 190px auto 0; 
-  padding: 0 var(--content-side-gap);
-  padding-left: var(--content-left-padding);
+  padding: 0 20px;      
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -127,3 +126,122 @@ nav ul li a:hover {
   box-sizing: border-box;
   padding-left: 60px;
 }
+
+/* notes */
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 60px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.notes-header h2 {
+  font-size: 60px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.notes-header p {
+  font-size: 20px;
+  color: #555;
+}
+
+textarea {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  resize: vertical;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #a4bcf3;
+  box-shadow: 0 0 6px rgba(164, 188, 243, 0.6);
+}
+
+button {
+  align-self: flex-start;
+  background-color: #a4bcf3;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #2c3e50;
+}
+
+.active {
+  color: #2c3e50;
+}
+
+.head, h1 {
+  margin-top: 0%;
+}
+
+/* flashcards */
+.flashcards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: flex-start;
+  padding: 10px 60px;
+}
+
+.flashcards-header h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: flex-start;
+}
+
+.flashcards-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.flashcard-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.flashcard-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.flashcard {
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 50px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.5s;
+}
+
+.flashcard-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
