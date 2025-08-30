@@ -28,16 +28,6 @@
   </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script>
-    async function exportPDF() {
-      const { jsPDF } = window.jspdf;
-      const doc = new jsPDF();
-      const text = document.getElementById("notesArea").value;
-      const lines = doc.splitTextToSize(text, 180);
-      doc.text(lines, 15, 20);
-
-      doc.save("notes.pdf");
-    }
-  </script>
+  <script src="notes.js"></script>
 </body>
 </html>
