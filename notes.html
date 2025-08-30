@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cramify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="notes.html" class="active">Notes</a></li>
+      <li><a href="flashcards.html">Flashcards</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div class="notes-container">
+      <div class="notes-header">
+        <h2>Notes</h2>
+        <p>Write and export your notes as a PDF.</p>
+      </div>
+
+      <textarea id="notesArea" placeholder="Start writing your notes here..."></textarea>
+      <button onclick="exportPDF()">Export as PDF</button>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    async function exportPDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      const text = document.getElementById("notesArea").value;
+      const lines = doc.splitTextToSize(text, 180);
+      doc.text(lines, 15, 20);
+
+      doc.save("notes.pdf");
+    }
+  </script>
+</body>
+</html>
