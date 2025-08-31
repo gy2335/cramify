@@ -19,7 +19,7 @@ function addCard() {
 function displayCard() {
   const cardText = document.getElementById("cardText");
   if (cards.length === 0) {
-    cardText.textContent = "No cards yet. Add one!";
+    cardText.textContent = "Add a card!";
     return;
   }
   cardText.textContent = showingFront ? cards[currentIndex].front : cards[currentIndex].back;
